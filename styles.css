@@ -1,0 +1,53 @@
+* {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+img {
+    display: block;
+    width: 250px;
+    margin: 5rem auto 0 auto;
+}
+
+p {
+    margin: 0;
+    text-align: center;
+}
+
+#main-container {
+    position: relative;
+    width: 95%;
+    height: auto;
+
+    margin: 7rem auto 0 auto;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 2rem;
+    /* border: 1px solid black; */
+}
+
+kbd {
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+
+.key {
+    width: 10rem;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+
+    background-color: #EEEEEE;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.key:hover {
+    background-color: #e5e5e5;
+}
