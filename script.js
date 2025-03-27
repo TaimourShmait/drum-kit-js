@@ -18,8 +18,16 @@ keyDivs.forEach(keyDiv => keyDiv.addEventListener("click", () => {
 // Function for playing audio
 function playAudio (key) {
 
+    const selectedDiv = document.querySelector(`.key[data-key=${key}]`)
     const audio = document.querySelector(`audio[data-key=${key}]`);
     audio.currentTime = 0;
     audio.play();
-    
+
+    selectedDiv.classList.add("playing");
+    selectedDiv.addEventListener("transitionend", removeTransition);
+}
+
+// Restoring original selected key size and shape after transition
+function removeTransition (e) {
+    e.target.classList.remove("playing");
 }
